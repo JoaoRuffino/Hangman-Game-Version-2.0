@@ -15,4 +15,4 @@ Project made using
 - In custom mode it is now possible to choose the word in lowercase;
 
 ## To acess the project:
-
+https://joaoruffino.github.io/Hangman-Game-Version-2.0/
