@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,600&family=Open+Sans:wght@800&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body{
+    background:  #38b6ff ; 
+    width: 100%;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#imagem{
+    background-image: url('../images/facil/img1.png');
+    background-repeat: no-repeat;
+    width: 310px;
+    height: 285px;
+    border-radius: 10px;
+    margin-top: 1rem;
+    background-size: contain;
+}
+.back{
+    background-image: url('../images/back-1.png');
+    width: 64px;
+    height: 64px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.back:hover{
+    background-image: url('../images/back-2.png');
+    margin-left: 1rem;
+    transition: 0.5s;
+}
+
+#palavra-secreta{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.letras{
+    border-bottom: 4px solid #8c52ff;
+    margin-right: 8px;
+    color: white;
+    width: 2rem;
+    text-align: center;
+}
+
+#teclado{
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+
+.teclas button{
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: #00bf63;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    transition: 0.5s;
+    box-shadow: 0px 2px 8px dimgray;
+    font-weight: 900;
+    
+}
+
+.teclas button:hover{
+    background-color: white;
+    color: #00bf63;
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+.teclas button:disabled{
+    cursor: not-allowed;
+}
+
+
+#tecla-Restart{
+    background-color: #8c52ff;
+}
+
+#categoria{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 3rem;
+}
+
+/*Winning-Message*/
+.winning-message{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+}
+
+.winning-message-button{
+
+    font-size: 2.5rem;
+    background-color: rgba(65, 184, 131, 1);
+    padding: 2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    margin-top: 3rem;
+    color: white;
+    transition: 0.5s;
+}
+
+.winning-message-button:hover{
+    color: rgba(65, 184, 131, 1);
+    background-color: white;
+    transition: 0.5s;
+}
+
+.winning-message-text{
+    color: white;
+    font-size: 5rem;
+}
+
+/*Loser-Message*/
+.loser-message{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+}
+
+.loser-message-button{
+
+    font-size: 2.5rem;
+    background-color: rgb(184, 69, 65);
+    padding: 2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    margin-top: 3rem;
+    color: white;
+    transition: 0.5s;
+}
+
+.loser-message-button:hover{
+    color: rgb(184, 69, 65);
+    background-color: white;
+    transition: 0.5s;
+}
+
+.loser-message-text{
+    color: white;
+    font-size: 5rem;
+}
+
+.back-button{
+    font-size: 1.5rem;
+    background-color: rgb(146, 65, 184);
+    padding: 2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    margin-top: 3rem;
+    color: white;
+    transition: 0.5s;
+}
+.back-button:hover{
+    color: rgb(146, 65, 184);
+    background-color: white;
+    transition: 0.5s;
+}
+
+@media (max-width: 768px){
+    #teclado{
+        margin-top: 2rem;
+    }
+    .teclas button{
+        width: 24px;
+        height: 24px;
+        font-size: 0.7rem;
+        margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    margin-top: 0.7rem;
+    }
+  
+    #palavra-secreta{
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+    .teclas button{
+        border-radius: 5px;
+    }
+    #categoria{
+        font-size: 1.7rem;
+    }
+    .letras{
+        
+        margin-right: 4px;
+       
+        width: 1rem;
+        
+    }
+    
+    #imagem{
+        width: 310px;
+        height: 285px;
+    }
+}

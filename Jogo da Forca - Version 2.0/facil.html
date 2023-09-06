@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/jogo-da-forca.png">
+    <link rel="stylesheet" href="styles/style-facil.css">
+    <title>Jogo da Forca</title>
+</head>
+<body>
+    <div class="back" onclick="menu()">
+    </div>
+    
+    <div class="container">
+        <div id="categoria">
+            Meio Ambiente
+        </div>
+        <div id="imagem">
+        </div>
+        <div id="palavra-secreta">
+            <!-- <div class="letras">A</div>
+            <div class="letras">A</div>
+            <div class="letras">A</div>
+            <div class="letras">A</div>
+            <div class="letras">A</div>
+            <div class="letras">A</div>
+            <div class="letras">A</div>
+            <div class="letras">A</div>-->
+        </div>
+
+        <div id="teclado">
+            <div class="teclas">
+                <button id="tecla-A" onclick="verificaLetraA('A', 'Á', 'Ã')">A</button>
+                <button id="tecla-B"onclick="verificaLetra('B')">B</button>
+                <button id="tecla-C"onclick="verificaLetraC('C', 'Ç')">C</button>
+                <button id="tecla-D"onclick="verificaLetra('D')">D</button>
+                <button id="tecla-E"onclick="verificaLetraA('E', 'É', 'Ê')">E</button>
+                <button id="tecla-F"onclick="verificaLetra('F')">F</button>
+                <button id="tecla-G"onclick="verificaLetra('G')">G</button>
+                <button id="tecla-H"onclick="verificaLetra('H')">H</button>
+                <button id="tecla-I"onclick="verificaLetraA('I', 'Í', 'Î')">I</button>
+            </div>
+            <div class="teclas">
+                <button id="tecla-J"onclick="verificaLetra('J')">J</button>
+                <button id="tecla-K"onclick="verificaLetra('K')">K</button>
+                <button id="tecla-L"onclick="verificaLetra('L')">L</button>
+                <button id="tecla-M"onclick="verificaLetra('M')">M</button>
+                <button id="tecla-N"onclick="verificaLetra('N')">N</button>
+                <button id="tecla-O"onclick="verificaLetraA('O', 'Ô', 'Ó')">O</button>
+                <button id="tecla-P"onclick="verificaLetra('P')">P</button>
+                <button id="tecla-Q"onclick="verificaLetra('Q')">Q</button>
+                <button id="tecla-R"onclick="verificaLetra('R')">R</button>
+            </div>
+            <div class="teclas">
+                <button id="tecla-S"onclick="verificaLetra('S')">S</button>
+                <button id="tecla-T"onclick="verificaLetra('T')">T</button>
+                <button id="tecla-U"onclick="verificaLetraA('U', 'Ú', 'Û')">U</button>
+                <button id="tecla-V"onclick="verificaLetra('V')">V</button>
+                <button id="tecla-W"onclick="verificaLetra('W')">W</button>
+                <button id="tecla-X"onclick="verificaLetra('X')">X</button>
+                <button id="tecla-Y"onclick="verificaLetra('Y')">Y</button>
+                <button id="tecla-Z"onclick="verificaLetra('Z')">Z</button>
+                <button id="tecla-Restart" onclick="redireciona()">🎮</button>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="winning-message" id="winning-message">
+        <p class="winning-message-text">Venceu!</p>
+        <button class="winning-message-button" onclick="redireciona()">Reiniciar</button>
+        <button class="back-button" onclick="menu()">Selecionar modo</button>
+    </div>
+
+    <div class="loser-message" id="loser-message">
+        <p class="loser-message-text">Perdeu :(</p>
+        <button class="loser-message-button" onclick="redireciona()">Reiniciar</button>
+        <button class="back-button" onclick="menu()">Selecionar modo</button>
+    </div>
+
+</body>
+<script src="script/index.js"></script>
+</html>
